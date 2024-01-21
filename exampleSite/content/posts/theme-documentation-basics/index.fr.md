@@ -5,7 +5,7 @@ date: 2020-03-06T21:40:32+08:00
 lastmod: 2020-03-06T21:40:32+08:00
 draft: false
 author: "FeelIt"
-authorLink: "https://feelit.khusika.dev"
+authorLink: "https://feelit.VipinMadhaan.dev"
 description: "Découvrez en quoi consiste le thème Hugo - FeelIt et les concepts fondamentaux qui le sous-tendent."
 resources:
 - name: "featured-image"
@@ -28,7 +28,7 @@ Découvrez en quoi consiste le thème Hugo - **FeelIt** et les concepts fondamen
 
 {{< admonition warning >}}
 Sorry, this article has not been completely translated into **French**.
-Welcome to take the time to propose a translation by [:(fa-solid fa-code-branch fa-fw): making a PR](https://github.com/khusika/FeelIt/pulls) to the theme!
+Welcome to take the time to propose a translation by [:(fa-solid fa-code-branch fa-fw): making a PR](https://github.com/VipinMadhaan/FeelIt/pulls) to the theme!
 {{< /admonition >}}
 
 ## 1 Requirements
@@ -38,7 +38,7 @@ Thanks to the simplicity of Hugo, [Hugo](https://gohugo.io/) is the only depende
 Just install latest version of [:(fa-regular fa-file-archive fa-fw): Hugo (> 0.110.0)](https://gohugo.io/getting-started/installing/) for your OS (**Windows**, **Linux**, **macOS**).
 
 {{< admonition note "Why not support earlier versions of Hugo?" >}}
-Since [Markdown Render Hooks](https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks) were introduced in [Hugo Christmas Edition](https://gohugo.io/news/0.62.0-relnotes/), and some image sources are using webp which was introduced in [0.84.0](https://github.com/gohugoio/hugo/releases/tag/v0.84.0) and also we changed [config.toml to hugo.toml](https://github.com/khusika/FeelIt/commit/f965cb91df2b2e90e667e3cf152fffd73d885906), this theme only supports Hugo versions above **0.110.0**.
+Since [Markdown Render Hooks](https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks) were introduced in [Hugo Christmas Edition](https://gohugo.io/news/0.62.0-relnotes/), and some image sources are using webp which was introduced in [0.84.0](https://github.com/gohugoio/hugo/releases/tag/v0.84.0) and also we changed [config.toml to hugo.toml](https://github.com/VipinMadhaan/FeelIt/commit/f965cb91df2b2e90e667e3cf152fffd73d885906), this theme only supports Hugo versions above **0.110.0**.
 {{< /admonition >}}
 
 {{< admonition tip "Hugo extended version is recommended" >}}
@@ -60,21 +60,21 @@ cd my_website
 
 ### 2.2 Install the Theme
 
-The **FeelIt** theme’s repository is: [https://github.com/khusika/FeelIt](https://github.com/khusika/FeelIt).
+The **FeelIt** theme’s repository is: [https://github.com/VipinMadhaan/FeelIt](https://github.com/VipinMadhaan/FeelIt).
 
-You can download the [latest release :(fa-regular fa-file-archive fa-fw): .zip file](https://github.com/khusika/FeelIt/releases) of the theme and extract it in the `themes` directory.
+You can download the [latest release :(fa-regular fa-file-archive fa-fw): .zip file](https://github.com/VipinMadhaan/FeelIt/releases) of the theme and extract it in the `themes` directory.
 
 Alternatively, clone this repository to the `themes` directory:
 
 ```bash
-git clone https://github.com/khusika/FeelIt.git themes/FeelIt
+git clone https://github.com/VipinMadhaan/FeelIt.git themes/FeelIt
 ```
 
 Or, create an empty git repository and make this repository a submodule of your site directory:
 
 ```bash
 git init
-git submodule add https://github.com/khusika/FeelIt.git themes/FeelIt
+git submodule add https://github.com/VipinMadhaan/FeelIt.git themes/FeelIt
 ```
 
 ### 2.3 Basic Configuration {#basic-configuration}
@@ -129,7 +129,7 @@ theme = "FeelIt"
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
-    # false is a necessary configuration (https://github.com/khusika/FeelIt/issues/158)
+    # false is a necessary configuration (https://github.com/VipinMadhaan/FeelIt/issues/158)
     noClasses = false
 ```
 
@@ -333,7 +333,7 @@ Please open the code block below to view the complete sample configuration :(fa-
     paramTitle = "Informations Personnelles"
     # general description of your site
     # can be write with markdown style
-    description = "[FeelIt](https://github.com/khusika/FeelIt) is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/) developed by [Khusika](https://khusika.dev). It is based on the original [LoveIt Theme](https://github.com/dillonzq/LoveIt), [LeaveIt Theme](https://github.com/liuzc/LeaveIt), and [KeepIt Theme](https://github.com/Fastbyte01/KeepIt)."
+    description = "[FeelIt](https://github.com/VipinMadhaan/FeelIt) is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/) developed by [Vipin Madhaan](https://VipinMadhaan.dev). It is based on the original [LoveIt Theme](https://github.com/dillonzq/LoveIt), [LeaveIt Theme](https://github.com/liuzc/LeaveIt), and [KeepIt Theme](https://github.com/Fastbyte01/KeepIt)."
     # description of your status
     [[params.about.status]]
       faIcon = "fa-solid fa-building"
@@ -742,7 +742,7 @@ Please open the code block below to view the complete sample configuration :(fa-
     lineNos = true
     lineNumbersInTable = true
     # false is a necessary configuration
-    # ({{< link "https://github.com/khusika/FeelIt/issues/158" >}})
+    # ({{< link "https://github.com/VipinMadhaan/FeelIt/issues/158" >}})
     noClasses = false
   # Goldmark is from Hugo 0.60 the default library used for Markdown
   [markup.goldmark]
@@ -1072,7 +1072,7 @@ Translations strings are used for common default values used in the theme. Trans
 
 To override these values, create a new file in your local i18n folder `i18n/<languageCode>.toml` and inspire yourself from `themes/FeelIt/i18n/en.toml`.
 
-By the way, as these translations could be used by other people, please take the time to propose a translation by [:(fa-solid fa-code-branch fa-fw): making a PR](https://github.com/khusika/FeelIt/pulls) to the theme!
+By the way, as these translations could be used by other people, please take the time to propose a translation by [:(fa-solid fa-code-branch fa-fw): making a PR](https://github.com/VipinMadhaan/FeelIt/pulls) to the theme!
 
 ## 5 Search
 

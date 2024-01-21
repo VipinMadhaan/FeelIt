@@ -10,11 +10,11 @@ math:
 ---
 
 {{< style "img { height: 1.25rem; }" >}}
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/khusika/FeelIt?style=flat-square)](https://github.com/khusika/FeelIt/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/VipinMadhaan/FeelIt?style=flat-square)](https://github.com/VipinMadhaan/FeelIt/releases)
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.110.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
-[![License](https://img.shields.io/github/license/khusika/FeelIt?style=flat-square)](https://github.com/khusika/FeelIt/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/khusika/FeelIt?style=social)](https://github.com/khusika/FeelIt)
-[![GitHub forks](https://img.shields.io/github/forks/khusika/FeelIt?style=social)](https://github.com/khusika/FeelIt/fork)
+[![License](https://img.shields.io/github/license/VipinMadhaan/FeelIt?style=flat-square)](https://github.com/VipinMadhaan/FeelIt/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/VipinMadhaan/FeelIt?style=social)](https://github.com/VipinMadhaan/FeelIt)
+[![GitHub forks](https://img.shields.io/github/forks/VipinMadhaan/FeelIt?style=social)](https://github.com/VipinMadhaan/FeelIt/fork)
 {{< /style >}}
 
 ![Hugo 主题 FeelIt](/images/Apple-Devices-Preview.webp "Hugo 主题 FeelIt")
@@ -84,7 +84,7 @@ math:
 
 FeelIt 根据 **MIT** 许可协议授权。
 
-更多信息请查看 [LICENSE 文件](https://github.com/khusika/FeelIt/blob/main/LICENSE)。
+更多信息请查看 [LICENSE 文件](https://github.com/VipinMadhaan/FeelIt/blob/main/LICENSE)。
 
 FeelIt 主题中用到了以下项目，感谢它们的作者：
 

@@ -21,7 +21,7 @@ If applicable, add screenshots to help explain your problem.
 ### Build Environment
 
 - OS: [e.g. Windows 10, macOS, Ubuntu]
-- Theme version/commit: [e.g. 1.0.0, [0548952](https://github.com/khusika/FeelIt/commits/0548952d216928c072948a91beb6279842bbf783)]
+- Theme version/commit: [e.g. 1.0.0, [0548952](https://github.com/VipinMadhaan/FeelIt/commits/0548952d216928c072948a91beb6279842bbf783)]
 - Hugo version: [e.g. 0.110.0]
 
 Please try to use Hugo **extended** version before opening the issue.

@@ -1,9 +1,9 @@
 # FeelIt Theme | Hugo [![Netlify Status](https://api.netlify.com/api/v1/badges/6c8cd9a1-4916-4705-b286-dce0930b9217/deploy-status)](https://app.netlify.com/sites/hugofeelit/deploys)
 
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/khusika/FeelIt?style=flat-square)](https://github.com/khusika/FeelIt/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/VipinMadhaan/FeelIt?style=flat-square)](https://github.com/VipinMadhaan/FeelIt/releases)
 [![Hugo](https://img.shields.io/badge/Hugo-%5E0.110.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
-[![License](https://img.shields.io/github/license/khusika/FeelIt?style=flat-square)](https://github.com/khusika/FeelIt/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/VipinMadhaan/FeelIt?style=flat-square)](https://github.com/VipinMadhaan/FeelIt/blob/main/LICENSE)
 
 > **FeelIt** is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/).
 
@@ -12,11 +12,11 @@ It is based on the original [LoveIt Theme](https://github.com/dillonzq/LoveIt), 
 Since the three themes have a similar look, if you have questions about their differences,
 read [Why choose FeelIt](#why-choose-feelit) so that you can choose the one that works best for you.
 
-![Hugo Theme FeelIt](https://github.com/khusika/FeelIt/raw/main/images/screenshot.png)
+![Hugo Theme FeelIt](https://github.com/VipinMadhaan/FeelIt/raw/main/images/screenshot.png)
 
 ## Demo Site
 
-To see this theme in action, here is a live [demo site](https://feelit.khusika.dev/) which is rendered with **FeelIt** theme.
+To see this theme in action, here is a live [demo site](https://feelit.VipinMadhaan.dev/) which is rendered with **FeelIt** theme.
 
 ## Why choose FeelIt
 
@@ -116,17 +116,17 @@ I hope you will FeelIt ❤️!
 
 ## Documentation
 
-* ### [Theme Documentation - Basics](https://feelit.khusika.dev/theme-documentation-basics/)
+* ### [Theme Documentation - Basics](https://feelit.VipinMadhaan.dev/theme-documentation-basics/)
 
-* ### [Theme Documentation - Content](https://feelit.khusika.dev/theme-documentation-content/)
+* ### [Theme Documentation - Content](https://feelit.VipinMadhaan.dev/theme-documentation-content/)
 
-* ### [Theme Documentation - Built in Shortcodes](https://feelit.khusika.dev/theme-documentation-built-in-shortcodes/)
+* ### [Theme Documentation - Built in Shortcodes](https://feelit.VipinMadhaan.dev/theme-documentation-built-in-shortcodes/)
 
-* ### [Theme Documentation - Extended Shortcodes](https://feelit.khusika.dev/theme-documentation-extended-shortcodes/)
+* ### [Theme Documentation - Extended Shortcodes](https://feelit.VipinMadhaan.dev/theme-documentation-extended-shortcodes/)
 
-* ### [Basic Markdown Syntax](https://feelit.khusika.dev/basic-markdown-syntax/)
+* ### [Basic Markdown Syntax](https://feelit.VipinMadhaan.dev/basic-markdown-syntax/)
 
-* ### [Emoji Support](https://feelit.khusika.dev/emoji-support/)
+* ### [Emoji Support](https://feelit.VipinMadhaan.dev/emoji-support/)
 
 ## Getting Started
 
@@ -166,17 +166,17 @@ FeelIt supports the following languages:
 * Czech
 * Persian
 * Ukrainian
-* [Contribute with a new language](https://github.com/khusika/FeelIt/pulls)
+* [Contribute with a new language](https://github.com/VipinMadhaan/FeelIt/pulls)
 
-[Languages Compatibility](https://feelit.khusika.dev/theme-documentation-basics/#language-compatibility)
+[Languages Compatibility](https://feelit.VipinMadhaan.dev/theme-documentation-basics/#language-compatibility)
 
 ## Questions, ideas, bugs, pull requests
 
-All feedback is welcome! Head over to the [issue tracker](https://github.com/khusika/FeelIt/issues).
+All feedback is welcome! Head over to the [issue tracker](https://github.com/VipinMadhaan/FeelIt/issues).
 
 ## License
 
-FeelIt is licensed under the **MIT** license. Check the [LICENSE file](https://github.com/khusika/FeelIt/blob/main/LICENSE) for details.
+FeelIt is licensed under the **MIT** license. Check the [LICENSE file](https://github.com/VipinMadhaan/FeelIt/blob/main/LICENSE) for details.
 
 Thanks to the authors of following resources included in the theme:
 
@@ -206,6 +206,6 @@ Thanks to the authors of following resources included in the theme:
 
 ## Author
 
-[Khusika](https://khusika.dev) and [all contributors](https://github.com/khusika/FeelIt/graphs/contributors)
+[Vipin Madhaan](https://VipinMadhaan.dev) and [all contributors](https://github.com/VipinMadhaan/FeelIt/graphs/contributors)
 
 Thanks! ❤️

@@ -5,7 +5,7 @@ date: 2020-03-06T21:40:32+08:00
 lastmod: 2020-03-06T21:40:32+08:00
 draft: false
 author: "FeelIt"
-authorLink: "https://feelit.khusika.dev"
+authorLink: "https://feelit.VipinMadhaan.dev"
 description: "探索 Hugo - FeelIt 主题的全部内容和背后的核心概念."
 resources:
 - name: "featured-image"
@@ -55,21 +55,21 @@ cd my_website
 
 ### 2.2 安装主题
 
-**FeelIt** 主题的仓库是: [https://github.com/khusika/FeelIt](https://github.com/khusika/FeelIt).
+**FeelIt** 主题的仓库是: [https://github.com/VipinMadhaan/FeelIt](https://github.com/VipinMadhaan/FeelIt).
 
-你可以下载主题的 [最新版本 :(fa-regular fa-file-archive fa-fw): .zip 文件](https://github.com/khusika/FeelIt/releases) 并且解压放到 `themes` 目录.
+你可以下载主题的 [最新版本 :(fa-regular fa-file-archive fa-fw): .zip 文件](https://github.com/VipinMadhaan/FeelIt/releases) 并且解压放到 `themes` 目录.
 
 另外, 也可以直接把这个主题克隆到 `themes` 目录:
 
 ```bash
-git clone https://github.com/khusika/FeelIt.git themes/FeelIt
+git clone https://github.com/VipinMadhaan/FeelIt.git themes/FeelIt
 ```
 
 或者, 初始化你的项目目录为 git 仓库, 并且把主题仓库作为你的网站目录的子模块:
 
 ```bash
 git init
-git submodule add https://github.com/khusika/FeelIt.git themes/FeelIt
+git submodule add https://github.com/VipinMadhaan/FeelIt.git themes/FeelIt
 ```
 
 ### 2.3 基础配置 {#basic-configuration}
@@ -127,7 +127,7 @@ theme = "FeelIt"
 [markup]
   # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
-    # false 是必要的设置 (https://github.com/khusika/FeelIt/issues/158)
+    # false 是必要的设置 (https://github.com/VipinMadhaan/FeelIt/issues/158)
     noClasses = false
 ```
 
@@ -332,7 +332,7 @@ hugo
     paramTitle = "个人信息"
     # 您网站的一般描述
     # 可以用markdown样式写
-    description = "[FeelIt](https://github.com/khusika/FeelIt) 是一个由 [Khusika](https://khusika.dev) 开发的**简洁**、**优雅**且**高效**的 [Hugo](https://gohugo.io/) 博客主题。 它的原型基于 [LoveIt 主题](https://github.com/dillonzq/LoveIt), [LeaveIt 主题](https://github.com/liuzc/LeaveIt), 和 [KeepIt 主题](https://github.com/Fastbyte01/KeepIt)。"
+    description = "[FeelIt](https://github.com/VipinMadhaan/FeelIt) 是一个由 [Vipin Madhaan](https://VipinMadhaan.dev) 开发的**简洁**、**优雅**且**高效**的 [Hugo](https://gohugo.io/) 博客主题。 它的原型基于 [LoveIt 主题](https://github.com/dillonzq/LoveIt), [LeaveIt 主题](https://github.com/liuzc/LeaveIt), 和 [KeepIt 主题](https://github.com/Fastbyte01/KeepIt)。"
     # 你的状态描述
     [[params.about.status]]
       faIcon = "fa-solid fa-building"
@@ -743,7 +743,7 @@ hugo
     lineNos = true
     lineNumbersInTable = true
     # false 是必要的设置
-    # ({{< link "https://github.com/khusika/FeelIt/issues/158" >}})
+    # ({{< link "https://github.com/VipinMadhaan/FeelIt/issues/158" >}})
     noClasses = false
   # Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库
   [markup.goldmark]
@@ -1073,7 +1073,7 @@ defaultContentLanguage = "zh-cn"
 
 要覆盖默认值, 请在你项目的 i18n 目录 `i18n/<languageCode>.toml` 中创建一个新文件，并从 `themes/FeelIt/i18n/en.toml` 中获得提示.
 
-另外, 由于你的翻译可能会帮助到其他人, 请花点时间通过 [:(fa-solid fa-code-branch fa-fw): 创建一个 PR](https://github.com/khusika/FeelIt/pulls) 来贡献主题翻译, 谢谢!
+另外, 由于你的翻译可能会帮助到其他人, 请花点时间通过 [:(fa-solid fa-code-branch fa-fw): 创建一个 PR](https://github.com/VipinMadhaan/FeelIt/pulls) 来贡献主题翻译, 谢谢!
 
 ## 5 搜索
 

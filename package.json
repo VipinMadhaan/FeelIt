@@ -29,16 +29,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/khusika/FeelIt.git"
+    "url": "git+https://github.com/VipinMadhaan/FeelIt.git"
   },
   "keywords": [
     "hugo",
     "theme"
   ],
-  "author": "Khusika",
+  "author": "Vipin Madhaan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/khusika/FeelIt/issues"
+    "url": "https://github.com/VipinMadhaan/FeelIt/issues"
   },
-  "homepage": "https://github.com/khusika/FeelIt#readme"
+  "homepage": "https://github.com/VipinMadhaan/FeelIt#readme"
 }

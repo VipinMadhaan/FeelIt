@@ -3,16 +3,16 @@
 
 name = "FeelIt"
 license = "MIT"
-licenselink = "https://github.com/khusika/FeelIt/blob/main/LICENSE"
+licenselink = "https://github.com/VipinMadhaan/FeelIt/blob/main/LICENSE"
 description = "A Clean, Elegant but Advanced Hugo Theme for Hugo."
-homepage = "https://github.com/khusika/FeelIt"
-demosite = "https://feelit.khusika.dev/"
+homepage = "https://github.com/VipinMadhaan/FeelIt"
+demosite = "https://feelit.VipinMadhaan.dev/"
 tags = ["blog", "dark", "light", "multilangual", "responsive"]
 features = ["cover-image", "favicon", "multilingual", "pagination", "social-menu", "syntax-highlighting", "SEO Optimized", "HTML and CSS Optimized", "PWA Support"]
 
 [author]
-  name = "Khusika"
-  homepage = "https://khusika.dev/"
+  name = "Vipin Madhaan"
+  homepage = "https://VipinMadhaan.dev/"
 
 [original]
   name = "Dillon"
