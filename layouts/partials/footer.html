@@ -6,17 +6,43 @@
         </div>
     {{- end -}}
 
-    {{- /* Hugo and FeelIt */ -}}
+    {{- /* Site Credit */ -}}
+    {{- if ne .Site.Params.footer.credits false -}}
+        <div class="credits">
+            <img alt="Vipin Madhaan" class="credits-img"/>
+        </div>
+    {{- end -}}
+
+    {{- /* Menu Content */ -}}
+    {{- if ne .Site.Params.footer.menu false -}}
+        <div class="footer-line">
+            <ul class="footer-menu">
+                {{- range .Site.Menus.footer -}}
+                    {{- $url := .URL | relLangURL -}}
+                    {{- with .Page -}}
+                        {{- $url = .RelPermalink -}}
+                    {{- end -}}
+                    <li>
+                        <a class="footer-menu-item{{ if $.IsMenuCurrent `footer` . | or ($.HasMenuCurrent `footer` .) | or (eq $.RelPermalink $url) }} active{{ end }}" href="{{ $url }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if (urls.Parse $url).Host }} rel="noopener noreffer" target="_blank"{{ end }}>
+                            {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
+                        </a>
+                    </li>
+                {{- end -}}
+            </ul>
+        </div>
+    {{- end -}}
+
+    <!-- {{- /* Hugo and FeelIt */ -}}
     {{- if ne .Site.Params.footer.hugo false -}}
         <div class="footer-line">
             {{- $hugo := printf `<a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo %v">Hugo</a>` hugo.Version -}}
             {{- $theme := .Scratch.Get "version" | printf `<a href="https://github.com/khusika/FeelIt" target="_blank" rel="noopener noreffer" title="FeelIt %v"><i class="fa-solid fa-hand-holding-heart fa-fw"></i> FeelIt</a>` -}}
             {{- dict "Hugo" $hugo "Theme" $theme | T "poweredBySome" | safeHTML }}
         </div>
-    {{- end -}}
+    {{- end -}} -->
 
     <div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork">
-        {{- /* Copyright year */ -}}
+        <!-- {{- /* Copyright year */ -}}
         {{- if ne .Site.Params.footer.copyright false -}}
             <i class="fa-regular fa-copyright fa-fw"></i>
             {{- with .Site.Params.footer.since -}}
@@ -26,14 +52,14 @@
             {{- else -}}
                 <span itemprop="copyrightYear">{{ now.Year }}</span>
             {{- end -}}
-        {{- end -}}
+        {{- end -}} -->
 
         {{- /* Author */ -}}
         {{- if ne .Site.Params.footer.author false -}}
-            <span class="author" itemprop="copyrightHolder">&nbsp;<a href="{{ $.Site.Author.link | default .Site.Home.RelPermalink }}">{{ .Site.Author.name }}</a></span>
+            Copyright &copy; <span class="author" itemprop="copyrightHolder">&nbsp;<a href="{{ $.Site.Author.link | default .Site.Home.RelPermalink }}">{{ .Site.Author.name }}</a></span>. All rights reserved.
         {{- end -}}
 
-        {{- /* License */ -}}
+        <!-- {{- /* License */ -}}
         {{- with .Site.Params.footer.license -}}
             &nbsp;|&nbsp;<span class="license">{{ . | safeHTML }}</span>
         {{- end -}}
@@ -42,6 +68,6 @@
         {{- with .Site.Params.footer.icp -}}
             <span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
             <span class="icp">{{ . | safeHTML }}</span>
-        {{- end -}}
+        {{- end -}} -->
     </div>
 </div>

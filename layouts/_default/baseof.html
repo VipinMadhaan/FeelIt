@@ -53,14 +53,20 @@
             {{- /* top button */ -}}
             <a href="#" id="back-to-top" class="fixed-button" title="{{ T `backToTop` }}">
                 <i class="fa-solid fa-chevron-up fa-fw"></i>
+                <span class="variant-numeric">0%</span>
             </a>
 
             {{- /* comment button */ -}}
             {{- if .Site.Params.page.comment.enable -}}
             <a href="#" id="view-comments" class="fixed-button" title="{{ T `viewComments` }}">
-                <i class="fa-solid fa-comment-alt fa-fw"></i>
+                <i class="fa-solid fa-comment fa-fw"></i>
             </a>
             {{- end -}}
+        </div>
+
+        <div class="widgets">
+            {{- /* Reading progress bar */ -}}
+            <div class="reading-progress-bar"></div>
         </div>
 
         {{- /* Load JavaScript scripts and CSS */ -}}

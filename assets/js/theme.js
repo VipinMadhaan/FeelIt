@@ -634,6 +634,39 @@ class Theme {
                 });
                 this.switchThemeEventSet.add(this._utterancesOnSwitchTheme);
             }
+      if (this.config.comment.giscus) {
+        const giscusConfig = this.config.comment.giscus;
+        const script = document.createElement('script');
+        script.src = 'https://giscus.app/client.js';
+        script.setAttribute('data-repo', giscusConfig.repo);
+        script.setAttribute('data-repo-id', giscusConfig.repo_id);
+        script.setAttribute('data-category', giscusConfig.category);
+        script.setAttribute('data-category-id', giscusConfig.category_id);
+        script.setAttribute('data-mapping', giscusConfig.mapping);
+        script.setAttribute('data-strict', '1');
+        script.setAttribute('data-reactions-enabled', '1');
+        script.setAttribute('data-emit-metadata', '0');
+        script.setAttribute('data-input-position', 'bottom');
+        script.setAttribute('data-lang', 'en');
+        script.setAttribute('data-loading', 'lazy');
+        script.setAttribute('data-theme', this.isDark ? 'dark_dimmed' : 'light');
+        script.crossOrigin = 'anonymous';
+        script.async = true;
+        document.getElementById('giscus-block').appendChild(script);
+        this._giscusOnSwitchTheme =
+          this._giscusOnSwitchTheme ||
+          (() => {
+            const message = {
+              setConfig: {
+                theme: this.isDark ? 'dark_dimmed' : 'light'
+              }
+            };
+            const iframe = document.querySelector('.giscus-frame');
+            if (!iframe) return;
+            iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+          });
+        this.switchThemeEventSet.add(this._giscusOnSwitchTheme);
+      }
         }
     }
 
@@ -651,8 +684,18 @@ class Theme {
             $viewComments.style.display = 'block';
         }
         const $fixedButtons = document.getElementById('fixed-buttons');
-        const ACCURACY = 20, MINIMUM = 100;
-        window.addEventListener('scroll', () => {
+    const $backToTop = document.getElementById('back-to-top');
+    const $readingProgressBar = document.querySelector('.reading-progress-bar');
+    const ACCURACY = 20,
+      MINIMUM = 100;
+
+    $backToTop?.addEventListener('click', () => {
+      this.util.scrollIntoView('body');
+    });
+
+    window.addEventListener(
+      'scroll',
+      () => {
             this.newScrollTop = this.util.getScrollTop();
             const scroll = this.newScrollTop - this.oldScrollTop;
             const isMobile = this.util.isMobile();
@@ -681,6 +724,26 @@ class Theme {
                 }
                 $fixedButtons.style.display = 'none';
             }
+        const contentHeight = document.body.scrollHeight - window.innerHeight;
+        const scrollPercent = Math.max(Math.min((100 * Math.max(this.newScrollTop, 0)) / contentHeight, 100), 0);
+        if ($readingProgressBar) {
+          $readingProgressBar.style.setProperty('--progress', `${scrollPercent.toFixed(2)}%`);
+        }
+        // whether to show fixed buttons
+        if ($fixedButtons) {
+          if (scrollPercent > 1) {
+            $fixedButtons.classList.remove('d-none', 'animate__fadeOut');
+            this.util.animateCSS($fixedButtons, ['animate__fadeIn'], true);
+          } else {
+            $fixedButtons.classList.remove('animate__fadeIn');
+            this.util.animateCSS($fixedButtons, ['animate__fadeOut'], true, () => {
+              $fixedButtons.classList.contains('animate__fadeOut') && $fixedButtons.classList.add('d-none');
+            });
+          }
+          if ($backToTop) {
+            $backToTop.querySelector('span').innerText = `${Math.round(scrollPercent)}%`;
+          }
+        }
             for (let event of this.scrollEventSet) event();
             this.oldScrollTop = this.newScrollTop;
         }, false);

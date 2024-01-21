@@ -1,3 +1,4 @@
+{{- $profile := .Site.Params.home.profile -}}
 {{- /* Desktop header */ -}}
 <header class="desktop" id="header-desktop">
     <div class="header-wrapper">
@@ -5,7 +6,7 @@
             <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
                 {{- with .Site.Params.header.title -}}
                     {{- with .logo -}}
-                        {{- dict "Src" . "Class" "logo" | partial "plugin/image.html" -}}
+                        {{- dict "Src" . "Class" "logo" "Alt" "Home" | partial "plugin/image.html" -}}
                     {{- end -}}
                     {{- with .pre -}}
                         <span class="header-title-pre">{{ . | safeHTML }}</span>
@@ -15,15 +16,61 @@
                         <span id="{{ $id }}" class="typeit"></span>
                         {{- dict $id (slice $id) | dict "typeitMap" | merge ($.Scratch.Get "this") | $.Scratch.Set "this" -}}
                     {{- else -}}
-                        {{- .name -}}
+                        <!-- {{- .name -}} -->
                     {{- end -}}
                     {{- with .post -}}
                         <span class="header-title-post">{{ . | safeHTML }}</span>
                     {{- end -}}
                 {{- else -}}
-                    {{- .Site.Title -}}
+                    <!-- {{- .Site.Title -}} -->
                 {{- end -}}
             </a>
+            {{- if $profile.social -}}
+                <span class="menu-item delimiter"></span>
+                {{- $socialMap := resources.Get "data/social.yml" | transform.Unmarshal -}}
+                {{- $socialArr := slice -}}
+                {{- range $key, $value := .Site.Params.social -}}
+                    {{- $social := $key | lower | index $socialMap | default dict -}}
+                    {{- if $value -}}
+                        {{- if reflect.IsMap $value -}}
+                            {{- with $value.weight -}}
+                                {{- $social = dict "Weight" . | merge $social -}}
+                            {{- end -}}
+                            {{- with $value.prefix -}}
+                                {{- $social = dict "Prefix" . | merge $social -}}
+                            {{- end -}}
+                            {{- with $value.template -}}
+                                {{- $social = dict "Template" . | merge $social -}}
+                            {{- end -}}
+                            {{- with $value.id -}}
+                                {{- $social = dict "Id" . | merge $social -}}
+                            {{- end -}}
+                            {{- with $value.url -}}
+                                {{- $social = dict "Url" . | merge $social -}}
+                            {{- end -}}
+                            {{- with $value.title -}}
+                                {{- $social = dict "Title" . | merge $social -}}
+                            {{- end -}}
+                            {{- with $value.newtab -}}
+                                {{- $social = dict "Newtab" . | merge $social -}}
+                            {{- end -}}
+                            {{- with $value.icon -}}
+                                {{- $social = dict "Icon" . | merge $social -}}
+                            {{- end -}}
+                        {{- else if ne $value true -}}
+                            {{- $social = dict "Id" $value | merge $social -}}
+                        {{- end -}}
+                        {{- if $social.Icon.Simpleicons -}}
+                            {{- $prefix := ($.Scratch.Get "cdn" | default dict).simpleIconsPrefix -}}
+                            {{- $social = dict "Prefix" $prefix | dict "Icon" | merge $social -}}
+                        {{- end -}}
+                        {{- $socialArr = $socialArr | append $social -}}
+                    {{- end -}}
+                {{- end -}}
+                {{- range sort $socialArr "Weight" -}}
+                    <span class="header-title-pre">{{- partial "plugin/social.html" . -}}</span>
+                {{- end -}}
+            {{- end -}}
         </div>
         <div class="menu">
             <div class="menu-inner">
@@ -105,15 +152,61 @@
                             <span id="{{ $id }}" class="typeit"></span>
                             {{- dict $id (slice $id) | dict "typeitMap" | merge ($.Scratch.Get "this") | $.Scratch.Set "this" -}}
                         {{- else -}}
-                            {{- .name -}}
+                            <!-- {{- .name -}} -->
                         {{- end -}}
                         {{- with .post -}}
                             <span class="header-title-post">{{ . | safeHTML }}</span>
                         {{- end -}}
                     {{- else -}}
-                        {{- .Site.Title -}}
+                        <!-- {{- .Site.Title -}} -->
                     {{- end -}}
                 </a>
+                {{- if $profile.social -}}
+                    <span class="menu-item delimiter"></span>
+                    {{- $socialMap := resources.Get "data/social.yml" | transform.Unmarshal -}}
+                    {{- $socialArr := slice -}}
+                    {{- range $key, $value := .Site.Params.social -}}
+                        {{- $social := $key | lower | index $socialMap | default dict -}}
+                        {{- if $value -}}
+                            {{- if reflect.IsMap $value -}}
+                                {{- with $value.weight -}}
+                                    {{- $social = dict "Weight" . | merge $social -}}
+                                {{- end -}}
+                                {{- with $value.prefix -}}
+                                    {{- $social = dict "Prefix" . | merge $social -}}
+                                {{- end -}}
+                                {{- with $value.template -}}
+                                    {{- $social = dict "Template" . | merge $social -}}
+                                {{- end -}}
+                                {{- with $value.id -}}
+                                    {{- $social = dict "Id" . | merge $social -}}
+                                {{- end -}}
+                                {{- with $value.url -}}
+                                    {{- $social = dict "Url" . | merge $social -}}
+                                {{- end -}}
+                                {{- with $value.title -}}
+                                    {{- $social = dict "Title" . | merge $social -}}
+                                {{- end -}}
+                                {{- with $value.newtab -}}
+                                    {{- $social = dict "Newtab" . | merge $social -}}
+                                {{- end -}}
+                                {{- with $value.icon -}}
+                                    {{- $social = dict "Icon" . | merge $social -}}
+                                {{- end -}}
+                            {{- else if ne $value true -}}
+                                {{- $social = dict "Id" $value | merge $social -}}
+                            {{- end -}}
+                            {{- if $social.Icon.Simpleicons -}}
+                                {{- $prefix := ($.Scratch.Get "cdn" | default dict).simpleIconsPrefix -}}
+                                {{- $social = dict "Prefix" $prefix | dict "Icon" | merge $social -}}
+                            {{- end -}}
+                            {{- $socialArr = $socialArr | append $social -}}
+                        {{- end -}}
+                    {{- end -}}
+                    {{- range sort $socialArr "Weight" -}}
+                        <span class="header-title-pre">{{- partial "plugin/social.html" . -}}</span>
+                    {{- end -}}
+                {{- end -}}
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>

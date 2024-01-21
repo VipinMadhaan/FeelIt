@@ -60,7 +60,12 @@
         {{- with .Site.Copyright -}}
             "license": "{{ . | safeHTML }}",
         {{- end -}}
-        "name": {{ .Site.Title | safeHTML }}
+        "name": {{ .Site.Title | safeHTML }},
+        "sameAs":[
+            "https://www.linkedin.com/in/{{ .Site.Params.social.Linkedin | safeHTML }}",
+            "https://twitter.com/{{ .Site.Params.social.Twitter | safeHTML }}",
+            "https://github.com/{{ .Site.Params.social.Github | safeHTML }}"
+        ]
     }
     </script>
 

@@ -4,28 +4,32 @@
     {{- /* 001: Twitter */ -}}
     {{- if $share.Twitter -}}
         <a href="#" onclick="return false;" title="{{ T `shareOn` }} Twitter" data-sharer="twitter" data-url="{{ .Permalink }}" data-title="{{ .Title }}"{{ with .Site.Params.Social.Twitter }} data-via="{{ . }}"{{ end }}{{ with .Params.tags }} data-hashtags="{{ delimit . `,` }}"{{ end }}>
-            {{- dict "Class" "fa-brands fa-square-x-twitter fa-fw" | partial "plugin/icon.html" -}}
+            <!--{{- dict "Class" "fa-brands fa-square-x-twitter fa-fw" | partial "plugin/icon.html" -}}-->
+             {{- dict "Simpleicons" "twitter" "Prefix" (.Scratch.Get "cdn" | default dict).simpleIconsPrefix | partial "plugin/icon.html" -}}
         </a>
     {{- end -}}
 
     {{- /* 002: Facebook */ -}}
     {{- if $share.Facebook -}}
         <a href="#" onclick="return false;" title="{{ T `shareOn` }} Facebook" data-sharer="facebook" data-url="{{ .Permalink }}"{{ with .Params.tags }} data-hashtag="{{ index . 0 }}"{{ end }}>
-            {{- dict "Class" "fa-brands fa-facebook-square fa-fw" | partial "plugin/icon.html" -}}
+            <!--{{- dict "Class" "fa-brands fa-facebook-square fa-fw" | partial "plugin/icon.html" -}}-->
+            {{- dict "Simpleicons" "facebook" "Prefix" (.Scratch.Get "cdn" | default dict).simpleIconsPrefix | partial "plugin/icon.html" -}}
         </a>
     {{- end -}}
 
     {{- /* 003: Linkedin */ -}}
     {{- if $share.Linkedin -}}
         <a href="#" onclick="return false;" title="{{ T `shareOn` }} Linkedin" data-sharer="linkedin" data-url="{{ .Permalink }}">
-            {{- dict "Class" "fa-brands fa-linkedin fa-fw" | partial "plugin/icon.html" -}}
+            <!-- {{- dict "Class" "fa-brands fa-linkedin fa-fw" | partial "plugin/icon.html" -}} -->
+            {{- dict "Simpleicons" "linkedin" "Prefix" (.Scratch.Get "cdn" | default dict).simpleIconsPrefix | partial "plugin/icon.html" -}}
         </a>
     {{- end -}}
 
     {{- /* 004: WhatsApp */ -}}
     {{- if $share.Whatsapp -}}
         <a href="#" onclick="return false;" title="{{ T `shareOn` }} WhatsApp" data-sharer="whatsapp" data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-web>
-            {{- dict "Class" "fa-brands fa-whatsapp fa-fw" | partial "plugin/icon.html" -}}
+            <!-- {{- dict "Class" "fa-brands fa-whatsapp fa-fw" | partial "plugin/icon.html" -}} -->
+            {{- dict "Simpleicons" "whatsapp" "Prefix" (.Scratch.Get "cdn" | default dict).simpleIconsPrefix | partial "plugin/icon.html" -}}
         </a>
     {{- end -}}
 
@@ -60,7 +64,8 @@
     {{- /* 009: Reddit */ -}}
     {{- if $share.Reddit -}}
         <a href="#" onclick="return false;" title="{{ T `shareOn` }} Reddit" data-sharer="reddit" data-url="{{ .Permalink }}">
-            {{- dict "Class" "fa-brands fa-reddit fa-fw" | partial "plugin/icon.html" -}}
+            <!-- {{- dict "Class" "fa-brands fa-reddit fa-fw" | partial "plugin/icon.html" -}}  -->
+            {{- dict "Simpleicons" "reddit" "Prefix" (.Scratch.Get "cdn" | default dict).simpleIconsPrefix | partial "plugin/icon.html" -}}
         </a>
     {{- end -}}
 
@@ -194,6 +199,14 @@
     {{- if $share.Mix -}}
         <a href="//mix.com/add?url={{ .Permalink }}&amp;description={{ .Title }}" target="_blank" title="{{ T `shareOn` }} Mix">
             {{- dict "Class" "fa-brands fa-mix fa-fw" | partial "plugin/icon.html" -}}
+        </a>
+    {{- end -}}
+
+{{- /* 029: Email */ -}}
+    {{- if $share.Email -}}
+        <a href="mailto:?Body={{ .Permalink }}&amp;Subject={{ .Title }}" target="_blank" title="Email this" data-sharer="email" data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-description="{{ .Description }}">
+            <!-- {{- dict "Class" "fa-brands fa-envelope fa-fw" | partial "plugin/icon.html" -}} -->
+            {{- dict "Simpleicons" "email" "Prefix" (.Scratch.Get "cdn" | default dict).simpleIconsPrefix | partial "plugin/icon.html" -}}
         </a>
     {{- end -}}
 {{- end -}}

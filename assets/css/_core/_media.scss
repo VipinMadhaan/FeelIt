@@ -6,11 +6,7 @@
 
 @media only screen and (max-width: 7680px) {
   .page {
-    width: 80%;
-  }
-
-  .single {
-    width: 70%;
+    width: 100%;
   }
 
   .archive {
@@ -19,40 +15,13 @@
 
   #header-desktop .header-wrapper {
     padding: 0 1rem;
-  }
-
-  .home[data-home=posts] {
-    .summary{
-      min-height: 30.5rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 1920px) {
-  .home[data-home=posts] {
-    .summary{
-      min-height: 27rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  .home[data-home=posts] {
-    .summary{
-      min-height: 24rem;
-    }
+    max-width: $global-max-width;
   }
 }
 
 @media only screen and (max-width: 1440px) {
   .archive {
     width: 56%;
-  }
-
-  .home[data-home=posts] {
-    .summary{
-      min-height: 23rem;
-    }
   }
 }
 
@@ -70,22 +39,16 @@
   }
 
   .page, .single {
-    width: 85%;
+    width: 100%;
 
     .categories-card {
       .card-item {
-        width: 85%;
+        width: 100%;
         min-height: 10rem;
         .card-item-wrapper {
           padding-bottom: 1rem;
         }
       }
-    }
-  }
-
-  .home[data-home=posts] {
-    .summary{
-      min-height: 22rem;
     }
   }
 

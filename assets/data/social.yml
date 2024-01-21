@@ -1,10 +1,10 @@
-# 001: Github
-github:
+# 001: Twitter
+twitter:
   Weight: 1
-  Prefix: https://github.com/
-  Title: GitHub
+  Prefix: https://twitter.com/
+  Title: Twitter
   Icon:
-    Class: fa-brands fa-github-alt fa-fw
+    Simpleicons: twitter
 
 # 002: LinkedIn
 linkedin:
@@ -12,15 +12,15 @@ linkedin:
   Prefix: https://linkedin.com/in/
   Title: LinkedIn
   Icon:
-    Class: fa-brands fa-linkedin fa-fw
+    Simpleicons: linkedin
 
-# 003: Twitter
-twitter:
+# 003: Github
+github:
   Weight: 3
-  Prefix: https://twitter.com/
-  Title: Twitter
+  Prefix: https://github.com/
+  Title: GitHub
   Icon:
-    Class: fa-brands fa-square-x-twitter fa-fw
+    Simpleicons: github
 
 # 004: Instagram
 instagram:

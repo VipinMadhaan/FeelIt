@@ -8,9 +8,10 @@ $global-font-family: system-ui, -apple-system, BlinkMacSystemFont, PingFang SC, 
 $global-font-size: 16px;
 $global-font-weight: 400;
 $global-line-height: 1.5rem;
+$global-max-width: 1000px;
 
 // Color of the background
-$global-background-color: #f2f2f2 !default;
+$global-background-color: #ffffff !default;
 $global-background-color-dark: #292a2d !default;
 $global-background-card-color: #fff !default;
 $global-background-card-color-dark: #333 !default;
@@ -20,7 +21,7 @@ $global-font-color: #161209 !default;
 $global-font-color-dark: #a9a9b3 !default;
 
 // Color of the secondary text
-$global-font-secondary-color: #635F56 !default;
+$global-font-secondary-color: #505050 !default;
 $global-font-secondary-color-dark: #a9a9b3 !default;
 
 // Color of the link
@@ -28,7 +29,7 @@ $global-link-color: #161209 !default;
 $global-link-color-dark: #a9a9b3 !default;
 
 // Color of the hover link
-$global-link-hover-color: #2d96bd !default;
+$global-link-hover-color: #0056b3 !default;
 $global-link-hover-color-dark: #fff !default;
 
 // Color of the border
@@ -83,7 +84,7 @@ $toc-title-font-size: 1rem !default;
 $toc-content-font-size: .9rem !default;
 
 // Color of the single link
-$single-link-color: #147da4 !default;
+$single-link-color: #0056b3 !default;
 $single-link-color-dark: #55bde2 !default;
 
 // Color of the hover single link
@@ -120,7 +121,7 @@ $pagination-link-hover-color-dark: #fff !default;
 
 // ========== Code ========== //
 // Color of the code
-$code-color: #E74C3C !default;
+$code-color: #b30000 !default;
 $code-color-dark: #E5BF78 !default;
 
 // Color of the code background

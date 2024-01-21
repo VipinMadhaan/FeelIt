@@ -33,6 +33,9 @@ header {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
+  max-width: $global-max-width;
+  margin: auto;
+  padding: 0 1rem;
 }
 
 .header-title {
@@ -160,6 +163,14 @@ header {
 
     .header-title {
       font-size: $header-title-font-size;
+      span {
+        font-size: 1.4rem;
+        line-height: 3.2rem;
+      }
+      .menu-item.delimiter {
+        margin: 1rem 0.5rem;
+        border-left: 1.5px solid #161209;
+      }
     }
 
     .menu {
@@ -238,6 +249,14 @@ header {
       .header-title {
         font-size: $header-title-font-size;
         max-width: 80%;
+        span {
+          font-size: 1.4rem;
+          line-height: 3.2rem;
+        }
+        .menu-item.delimiter {
+          margin: 1rem 0.5rem;
+          border-left: 1.5px solid #161209;
+        }
       }
 
       .menu-toggle {

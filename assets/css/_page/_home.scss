@@ -3,6 +3,9 @@
     @include transform(translateY( 25vh));
     padding: 0 0 .5rem;
     text-align: center;
+    a {
+      margin: 0.4rem;
+    }
   }
 
   .home-avatar {
@@ -161,6 +164,9 @@
 
       .author {
         font-size: 1.05rem;
+      }
+      .post-catogery-link{
+        font-size: .95rem;
       }
     }
 

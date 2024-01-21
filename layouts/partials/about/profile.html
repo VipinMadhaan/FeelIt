@@ -2,6 +2,7 @@
 <div class="profile">
     <div class="grid top">
     {{- $avatar := $profile.avatarURL -}}
+    {{- $title := $profile.title -}}
     {{- with $profile.gravatarEmail -}}
         {{- $avatar = md5 . | printf "https://www.gravatar.com/avatar/%v?s=240&d=mp" -}}
     {{- end -}}
@@ -13,16 +14,16 @@
                 {{- with .Page -}}
                     {{- $url = .RelPermalink -}}
                 {{- end -}}
-                {{- dict "Src" $avatar | partial "plugin/image.html" -}}
+                {{- dict "Src" $avatar  "Alt" $title | partial "plugin/image.html" -}}
             {{- else -}}
-                {{- dict "Src" $avatar | partial "plugin/image.html" -}}
+                {{- dict "Src" $avatar  "Alt" $title | partial "plugin/image.html" -}}
             {{- end -}}
         </div>
     {{- end -}}
 
-        <h2>
+    <!-- <h2>
             {{- .Site.Title -}}
-        </h2>
+    </h2> -->
 
     {{- with $profile.subtitle -}}
         <div class="subtitle">

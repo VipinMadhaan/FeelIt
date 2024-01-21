@@ -10,7 +10,14 @@
     height: 80%;
 
     .container {
-      padding: 0 1rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        max-width: $global-max-width;
+        width: 100%;
+        margin: auto;
+        padding: 0 1rem;
     }
   }
 }

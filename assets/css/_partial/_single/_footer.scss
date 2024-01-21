@@ -6,6 +6,8 @@
     border-top: 1px solid $global-border-color;
     border-bottom: 1px solid $global-border-color;
     padding: 1rem 0 .5rem;
+    display: flex;
+    justify-content: space-between;
 
     [theme=dark] & {
       border-color: $global-border-color-dark;

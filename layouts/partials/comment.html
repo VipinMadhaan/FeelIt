@@ -5,6 +5,20 @@
 
 {{- if $comment.enable -}}
     <div id="comments" class="single-card">
+        {{- /* Giscus Comment System */ -}}
+        {{- $giscus := $comment.giscus | default dict -}}
+        {{- if $giscus.enable -}}
+            <div id="giscus-block">
+                <div id="giscus" class="giscus"></div>
+                <noscript>Please enable JavaScript to view the comments powered by giscus.</noscript>
+            </div>
+            {{- $theme := .Site.Params.defaulttheme -}}
+            {{- $commentConfig = dict "repo" $giscus.repo | dict "giscus" | merge $commentConfig -}}
+            {{- $commentConfig = dict "repo_id" $giscus.repo_id | dict "giscus" | merge $commentConfig -}}
+            {{- $commentConfig = $giscus.category | default "Show and tell" | dict "category" | dict "giscus" | merge $commentConfig -}}
+            {{- $commentConfig = $giscus.category_id | default "DIC_kwDOIEg6U84CRuX6" | dict "category_id" | dict "giscus" | merge $commentConfig -}}
+            {{- $commentConfig = $giscus.mapping | default "title" | dict "mapping" | dict "giscus" | merge $commentConfig -}}
+        {{- end -}}
         {{- /* Disqus Comment System */ -}}
         {{- $disqus := $comment.disqus | default dict -}}
         {{- if $disqus.enable -}}

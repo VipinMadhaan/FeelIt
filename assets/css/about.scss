@@ -31,8 +31,8 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 0 1rem;
-    min-height: 13rem;
-    max-height: 13rem;
+    min-height: 6rem;
+    max-height: 20rem;
     overflow-x: auto;
     @include border-radius(.5rem);
     @include box-shadow(0 2px 4px -1px rgba(0, 0, 0, 0.2));
@@ -68,6 +68,7 @@
   }
 
   .img {
+    margin: auto;
     img {
       width: 8rem;
       height: auto;
@@ -101,7 +102,7 @@
     font-weight: normal;
     text-align: center;
     margin: 0;
-    padding: .1rem;
+    padding: 4rem 0 1rem 0;
   }
 
   .links {
