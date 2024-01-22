@@ -6,10 +6,11 @@
         </div>
     {{- end -}}
 
-    {{- /* Site Credit */ -}}
-    {{- if ne .Site.Params.footer.credits false -}}
-        <div class="credits">
-            <img alt="Vipin Madhaan" class="credits-img"/>
+    {{- /* Site Subscribe */ -}}
+    {{- if ne .Site.Params.footer.subscribe false -}}
+        <div class="subscribe-container">
+            {{- block "content" . }}{{ end -}}
+            {{- partial "subscribe.html" . -}}
         </div>
     {{- end -}}
 
