@@ -183,6 +183,10 @@ header {
 
       .menu-item {
         margin: 0 .5rem;
+        // last item margin
+        &:last-child {
+          margin-right: 0;
+        }
 
         &.delimiter {
           border-left: 1.5px solid $global-font-color;

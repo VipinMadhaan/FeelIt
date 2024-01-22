@@ -27,13 +27,11 @@
         color: $global-font-secondary-color;
         display: inline-block;
         line-height: 26px;
-        padding: 0 10px;
+        padding: 0;
         position: relative;
         margin: 0 5px 5px 0;
         text-decoration: none;
         -webkit-transition: color 0.2s;
-        @include border-radius(.25rem);
-        border: 1px solid;
         &:hover {
           background-color: $global-background-color;
           color: $global-link-hover-color;

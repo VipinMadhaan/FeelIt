@@ -6,7 +6,7 @@
   @include border-radius(.5rem);
   background-color: $global-background-card-color;
   [theme=dark] & {
-    background-color: $global-background-card-color-dark;
+    background-color: $global-background-color-dark;
   }
   &[data-image=true] {
     margin-top: 0;

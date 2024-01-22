@@ -7,7 +7,7 @@
             {{- range $index, $value := . -}}
                 <span>
                 {{- $tag := partialCached "function/path.html" $value $value | printf "/tags/%v" | $.Site.GetPage -}}
-                <a href="{{ $tag.RelPermalink }}">{{ $tag.Title }}</a>
+                <a href="{{ $tag.RelPermalink }}"><span><span class="fa-solid fa-tags">&nbsp;</span>{{ $tag.Title }}</span></a>
                 </span>
             {{- end -}}
         </div>

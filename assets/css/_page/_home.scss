@@ -1,7 +1,7 @@
 .home {
   .home-profile {
-    @include transform(translateY( 25vh));
-    padding: 0 0 .5rem;
+    @include transform(translateY(25vh));
+    padding: 0 0 0.5rem;
     text-align: center;
     a {
       margin: 0.4rem;
@@ -9,7 +9,7 @@
   }
 
   .home-avatar {
-    padding: .5rem;
+    padding: 0.5rem;
 
     img {
       background-color: $avatar-background-color;
@@ -18,15 +18,15 @@
       height: 100%;
       margin: 0 auto;
       @include border-radius(100%);
-      @include box-shadow(0 0 0 .3618em $avatar-border-color);
+      @include box-shadow(0 0 0 0.3618em $avatar-border-color);
       @include transition(all 0.4s ease);
-      [theme=dark] & {
+      [theme='dark'] & {
         background-color: $avatar-background-color-dark;
-        @include box-shadow(0 0 0 .3618em $avatar-border-color-dark);
+        @include box-shadow(0 0 0 0.3618em $avatar-border-color-dark);
       }
       &:hover {
         position: relative;
-        @include transform(translateY(-.75rem));
+        @include transform(translateY(-0.75rem));
       }
     }
   }
@@ -35,14 +35,14 @@
     font-size: 1.25rem;
     font-weight: bold;
     margin: 0;
-    padding: .1rem;
+    padding: 0.1rem;
   }
 
   .home-subtitle {
     font-size: 1rem;
     font-weight: normal;
     margin: 0;
-    padding: .1rem;
+    padding: 0.1rem;
   }
 
   .links {
@@ -51,12 +51,12 @@
 
     a * {
       vertical-align: text-bottom;
-      margin: 0 .125rem .25rem;
+      margin: 0 0.125rem 0.25rem;
     }
 
     img {
       height: 1.5rem;
-      margin: 0 .125rem .25rem;
+      margin: 0 0.125rem 0.25rem;
     }
   }
 
@@ -65,16 +65,16 @@
     line-height: 1.5rem;
     font-weight: normal;
     margin: 0;
-    padding: .5rem;
+    padding: 0.5rem;
     color: $global-font-secondary-color;
 
-    [theme=dark] & {
+    [theme='dark'] & {
       color: $global-font-secondary-color-dark;
     }
   }
 }
 
-.home[data-home=posts] {
+.home[data-home='posts'] {
   .home-profile {
     @include transform(translateY(0));
     padding-top: 2rem;
@@ -95,18 +95,17 @@
     padding-top: 1rem;
   }
 
-
   .summary {
     background-color: $global-background-card-color;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    @include border-radius(.5rem);
+    @include border-radius(0.5rem);
     color: $global-font-color;
     width: 49%;
     @include transition(transform 0.4s ease);
     @include box-shadow(0 2px 4px -1px rgba(0, 0, 0, 0.2));
 
-    &[data-image=hide] {
+    &[data-image='hide'] {
       min-height: 13rem;
     }
 
@@ -114,7 +113,7 @@
       @include transform(scale(1.01));
     }
 
-    [theme=dark] & {
+    [theme='dark'] & {
       background-color: $global-background-card-color-dark;
       color: $global-font-color-dark;
     }
@@ -132,7 +131,7 @@
         left: 0;
         top: 0;
         @include object-fit(none);
-        @include border-radius(.5rem .5rem 0 0);
+        @include border-radius(0.5rem 0.5rem 0 0);
       }
 
       img.lazyloaded {
@@ -148,15 +147,15 @@
     }
 
     .post-meta {
-      font-size: .875rem;
-      margin: 0 1rem .5rem;
+      font-size: 0.875rem;
+      margin: 0 1rem 0.5rem;
       color: $global-font-secondary-color;
 
       span {
         display: inline-block;
       }
 
-      [theme=dark] & {
+      [theme='dark'] & {
         color: $global-font-secondary-color-dark;
       }
 
@@ -165,13 +164,13 @@
       .author {
         font-size: 1.05rem;
       }
-      .post-catogery-link{
-        font-size: .95rem;
+      .post-catogery-link {
+        font-size: 0.95rem;
       }
     }
 
     p {
-      margin: .5rem 0;
+      margin: 0.5rem 0;
     }
 
     .content {
@@ -183,7 +182,7 @@
       @include overflow-wrap(break-word);
       color: $global-font-secondary-color;
 
-      [theme=dark] & {
+      [theme='dark'] & {
         color: $global-font-secondary-color-dark;
       }
 
@@ -198,7 +197,7 @@
         display: inline;
 
         &::after {
-          content: "\A";
+          content: '\A';
           white-space: pre;
         }
       }
@@ -209,18 +208,21 @@
 
       @include link(false, true);
 
-      b, strong {
+      b,
+      strong {
         color: $global-font-secondary-color;
 
-        [theme=dark] & {
+        [theme='dark'] & {
           color: $global-font-secondary-color-dark;
         }
       }
     }
 
     .post-footer {
-      margin: .5rem 1rem 0 1rem;
-      font-size: .875rem;
+      margin: 0.5rem 1rem 0 1rem;
+      font-size: 0.875rem;
+      display: flex;
+      justify-content: space-between;
 
       .post-tags {
         list-style: none;
@@ -236,18 +238,16 @@
           color: $global-font-secondary-color;
           display: inline-block;
           line-height: 26px;
-          padding: 0 10px;
+          padding: 0 4px;
           position: relative;
           margin: 0 5px 5px 0;
           text-decoration: none;
           -webkit-transition: color 0.2s;
-          @include border-radius(.25rem);
-          border: 1px solid;
           &:hover {
             background-color: $global-background-color;
             color: $global-link-hover-color;
           }
-          [theme=dark] & {
+          [theme='dark'] & {
             color: $global-font-secondary-color-dark;
             &:hover {
               background-color: $global-background-color-dark;
@@ -258,6 +258,4 @@
       }
     }
   }
-
-
 }
