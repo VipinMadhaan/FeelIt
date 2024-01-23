@@ -39,7 +39,7 @@
             {{- $categories = $categories | append (printf `<a href="%v" class="post-catogery-link"><i class="fa-regular fa-folder fa-fw"></i>%v</a>` $category.RelPermalink $category.Title) -}}
         {{- end -}}
         {{- with delimit $categories "&nbsp;" -}}
-            &nbsp;&nbsp;<span class="post-category">
+            &nbsp;<span class="post-category">
                 {{- dict "Categories" . | T "publishedInCategories" | safeHTML -}}
             </span>
         {{- end -}}
