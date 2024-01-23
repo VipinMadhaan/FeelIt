@@ -56,8 +56,11 @@
         {{- end -}} -->
 
         {{- /* Author */ -}}
-        {{- if ne .Site.Params.footer.author false -}}
+        <!-- {{- if ne .Site.Params.footer.author false -}}
             Copyright &copy; <span class="author" itemprop="copyrightHolder">&nbsp;<a href="{{ $.Site.Author.link | default .Site.Home.RelPermalink }}">{{ .Site.Author.name }}</a></span>. All rights reserved.
+        {{- end -}} -->
+        {{- if ne .Site.Params.footer.author false -}}
+            Copyright &copy; <span class="author" itemprop="copyrightHolder">&nbsp;{{ .Site.Author.name }}</span>. All rights reserved.
         {{- end -}}
 
         <!-- {{- /* License */ -}}

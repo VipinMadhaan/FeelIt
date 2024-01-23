@@ -12,24 +12,24 @@ $global-max-width: 900px;
 
 // Color of the background
 $global-background-color: #ffffff !default;
-$global-background-color-dark: #292a2d !default;
+$global-background-color-dark: #020617 !default;
 $global-background-card-color: #fff !default;
-$global-background-card-color-dark: #333 !default;
+$global-background-card-color-dark: #000105 !default;
 
 // Color of the text
 $global-font-color: #161209 !default;
-$global-font-color-dark: #a9a9b3 !default;
+$global-font-color-dark: #bbb !default;
 
 // Color of the secondary text
 $global-font-secondary-color: #505050 !default;
-$global-font-secondary-color-dark: #a9a9b3 !default;
+$global-font-secondary-color-dark: #ccc !default;
 
 // Color of the link
 $global-link-color: #161209 !default;
-$global-link-color-dark: #a9a9b3 !default;
+$global-link-color-dark: #0ea5e9 !default;
 
-// Color of the hover link
-$global-link-hover-color: #06f !default;
+// Color of the hover link 005ce6
+$global-link-hover-color: #005ce6 !default;
 $global-link-hover-color-dark: #fff !default;
 
 // Color of the border
@@ -63,7 +63,7 @@ $header-height: 3.5rem !default;
 
 // Color of the header background
 $header-background-color: #f8f8f8 !default;
-$header-background-color-dark: #252627 !default;
+$header-background-color-dark: #000105 !default;
 
 // Font style of the header title
 $header-title-font-family: $global-font-family !default;
@@ -84,11 +84,11 @@ $toc-title-font-size: 1rem !default;
 $toc-content-font-size: .9rem !default;
 
 // Color of the single link
-$single-link-color: #06f !default;
-$single-link-color-dark: #55bde2 !default;
+$single-link-color: #0052cd !default;
+$single-link-color-dark: #0052cd !default;
 
 // Color of the hover single link
-$single-link-hover-color: #ef3982 !default;
+$single-link-hover-color: #005ce6 !default;
 $single-link-hover-color-dark: #bdebfc !default;
 
 // Color of the table background
@@ -111,8 +111,8 @@ $level-color-dark: #00875e !default;
 
 // ========== Pagination ========== //
 // Color of the link in pagination
-$pagination-link-color: #2d96bd !default;
-$pagination-link-color-dark: #a9a9b3 !default;
+$pagination-link-color: #0052cd !default;
+$pagination-link-color-dark: #0052cd !default;
 
 // Color of the hover link in pagination
 $pagination-link-hover-color: #000 !default;
