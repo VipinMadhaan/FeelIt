@@ -4,7 +4,7 @@
         {{- range .Site.Params.about.parameter -}}
         <div class="box">
             <p>{{ .language }}</p>
-            <p>{{ .year }}</p>
+            <p>{{ .level }}%</p>
             <div class="bar">
                 <div class="level" style="width: {{ .level }}%"></div>
             </div>
@@ -15,4 +15,3 @@
         <p>{{ .Site.Params.about.description | markdownify }}</p>
     </div>
 </div>
-
