@@ -90,7 +90,7 @@
     list-style: none;
     align-items: flex-start;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-top: 1rem;
   }
@@ -101,7 +101,7 @@
     padding-bottom: 1rem;
     @include border-radius(0.5rem);
     color: $global-font-color;
-    width: 49%;
+    width: 100%;
     @include transition(transform 0.4s ease);
     @include box-shadow(0 2px 4px -1px rgba(0, 0, 0, 0.2));
 
