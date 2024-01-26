@@ -30,7 +30,7 @@ Discover what the Hugo - **FeelIt** theme is all about and the core-concepts beh
 
 Thanks to the simplicity of Hugo, [Hugo](https://gohugo.io/) is the only dependency of this theme.
 
-Just install latest version of [:(fa-solid fa-file-archive fa-fw): Hugo (> 0.110.0)](https://gohugo.io/getting-started/installing/) for your OS (**Windows**, **Linux**, **macOS**).
+Just install latest version of [:(fa-regular fa-file-archive fa-fw): Hugo (> 0.110.0)](https://gohugo.io/getting-started/installing/) for your OS (**Windows**, **Linux**, **macOS**).
 
 {{< admonition note "Why not support earlier versions of Hugo?" >}}
 Since [Markdown Render Hooks](https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks) were introduced in [Hugo Christmas Edition](https://gohugo.io/news/0.62.0-relnotes/), and some image sources are using webp which was introduced in [0.84.0](https://github.com/gohugoio/hugo/releases/tag/v0.84.0) and also we changed [config.toml to hugo.toml](https://github.com/VipinMadhaan/FeelIt/commit/f965cb91df2b2e90e667e3cf152fffd73d885906), this theme only supports Hugo versions above **0.110.0**.
@@ -57,7 +57,7 @@ cd my_website
 
 The **FeelIt** theme’s repository is: [https://github.com/VipinMadhaan/FeelIt](https://github.com/VipinMadhaan/FeelIt).
 
-You can download the [latest release :(fa-solid fa-file-archive fa-fw): .zip file](https://github.com/VipinMadhaan/FeelIt/releases) of the theme and extract it in the `themes` directory.
+You can download the [latest release :(fa-regular fa-file-archive fa-fw): .zip file](https://github.com/VipinMadhaan/FeelIt/releases) of the theme and extract it in the `themes` directory.
 
 Alternatively, clone this repository to the `themes` directory:
 
@@ -192,7 +192,7 @@ Alternatively, you can use [AWS Amplify](https://gohugo.io/hosting-and-deploymen
 
 In addition to [Hugo global configuration](https://gohugo.io/overview/configuration/) and [menu configuration](#basic-configuration), **FeelIt** lets you define the following parameters in your site configuration (here is a `hugo.toml`, whose values are default).
 
-Please open the code block below to view the complete sample configuration :(fa-solid fa-hand-point-down fa-fw)::
+Please open the code block below to view the complete sample configuration :(fa-regular fa-hand-point-down fa-fw)::
 
 ```toml
 [params]
@@ -921,23 +921,23 @@ In `assets/css/_custom.scss`, you can add some css style code to customize the s
 
 | Language             | Hugo Code | HTML `lang` Attribute | Theme Docs                    | Lunr.js Support               |
 |:-------------------- |:---------:|:---------------------:|:-----------------------------:|:-----------------------------:|
-| German               | `de`      | `de`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
-| English              | `en`      | `en`                  | :(fa-solid fa-check-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
-| Spanish              | `es`      | `es`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
-| French               | `fr`      | `fr`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
-| Indonesian           | `id`      | `id`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
-| Italian              | `it`      | `it`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
-| Polish               | `pl`      | `pl`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-square fa-fw):       |
-| Brazilian Portuguese | `pt-br`   | `pt-BR`               | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
-| Romanian             | `ro`      | `ro`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
-| Russian              | `ru`      | `ru`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
-| Serbian              | `sr`      | `sr`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-square fa-fw):       |
-| Vietnamese           | `vi`      | `vi`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
-| Simplified Chinese   | `zh-cn`   | `zh-CN`               | :(fa-solid fa-check-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
-| Hungarian            | `hu`      | `hu`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-square fa-fw):       |
-| Czech                | `cs`      | `cs`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-square fa-fw):       |
-| Persian              | `fa`      | `fa`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-square fa-fw):       |
-| Ukrainian            | `uk`      | `uk`                  | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
+| German               | `de`      | `de`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
+| English              | `en`      | `en`                  | :(fa-regular fa-check-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
+| Spanish              | `es`      | `es`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
+| French               | `fr`      | `fr`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
+| Indonesian           | `id`      | `id`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
+| Italian              | `it`      | `it`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
+| Polish               | `pl`      | `pl`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-square fa-fw):       |
+| Brazilian Portuguese | `pt-br`   | `pt-BR`               | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
+| Romanian             | `ro`      | `ro`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
+| Russian              | `ru`      | `ru`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
+| Serbian              | `sr`      | `sr`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-square fa-fw):       |
+| Vietnamese           | `vi`      | `vi`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
+| Simplified Chinese   | `zh-cn`   | `zh-CN`               | :(fa-regular fa-check-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
+| Hungarian            | `hu`      | `hu`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-square fa-fw):       |
+| Czech                | `cs`      | `cs`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-square fa-fw):       |
+| Persian              | `fa`      | `fa`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-square fa-fw):       |
+| Ukrainian            | `uk`      | `uk`                  | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
 
 ### 4.2 Basic Configuration
 

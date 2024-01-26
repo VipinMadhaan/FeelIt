@@ -45,7 +45,7 @@
     <div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork">
         <!-- {{- /* Copyright year */ -}}
         {{- if ne .Site.Params.footer.copyright false -}}
-            <i class="fa-solid fa-copyright fa-fw"></i>
+            <i class="fa-regular fa-copyright fa-fw"></i>
             {{- with .Site.Params.footer.since -}}
                 <span itemprop="copyrightYear">
                     {{- if lt . now.Year }}{{ . }} - {{ end }}{{ now.Year -}}

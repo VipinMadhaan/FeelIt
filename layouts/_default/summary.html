@@ -36,7 +36,7 @@
         {{- $categories := slice -}}
         {{- range .Params.categories -}}
             {{- $category := partialCached "function/path.html" . . | printf "/categories/%v" | $.Site.GetPage -}}
-            {{- $categories = $categories | append (printf `<a href="%v" class="post-catogery-link"><i class="fa-solid fa-folder fa-fw"></i>%v</a>` $category.RelPermalink $category.Title) -}}
+            {{- $categories = $categories | append (printf `<a href="%v" class="post-catogery-link"><i class="fa-regular fa-folder fa-fw"></i>%v</a>` $category.RelPermalink $category.Title) -}}
         {{- end -}}
         {{- with delimit $categories "&nbsp;" -}}
             &nbsp;<span class="post-category">
@@ -57,7 +57,7 @@
     {{- /* Footer */ -}}
     <div class="post-footer">
         {{- with .Site.Params.dateFormat | default "2006-01-02" | .PublishDate.Format -}}
-            <span class="post-publish"><i class="fa-solid fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="{{ . }}">{{ . }}</time></span>&nbsp;
+            <span class="post-publish"><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="{{ . }}">{{ . }}</time></span>&nbsp;
         {{- end -}}
         {{- with $params.license | string -}}
             <span class="post-publish"><i class="fa-solid fa-balance-scale fa-fw"></i>&nbsp;{{- . | safeHTML -}}</span>

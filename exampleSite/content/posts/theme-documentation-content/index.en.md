@@ -55,7 +55,7 @@ such as **links**, **images**, `image` shortcode, `music` shortcode and some par
 
 Images in page resources or assets directory [processing](https://gohugo.io/content-management/image-processing/)
 will be supported in the future.
-It's really cool! :(fa-solid fa-grin-squint fa-fw):
+It's really cool! :(fa-regular fa-grin-squint fa-fw):
 {{< /admonition >}}
 
 ## 2 Front Matter {#front-matter}
@@ -356,18 +356,18 @@ Get the `class` of icons you wanted from the [Font Awesome website](https://font
 ```markdown
 Gone camping! {?:}(fa-solid fa-campground fa-fw): Be back soon.
 
-That is so funny! {?:}(fa-solid fa-grin-tears):
+That is so funny! {?:}(fa-regular fa-grin-tears):
 ```
 
 The rendered output looks like this:
 
 Gone camping! :(fa-solid fa-campground fa-fw): Be back soon.
 
-That is so funny! :(fa-solid fa-grin-tears):
+That is so funny! :(fa-regular fa-grin-tears):
 
 ### Escape character {#escape-character}
 
-In some special cases (when writing this theme documentation :(fa-solid fa-grin-squint-tears):),
+In some special cases (when writing this theme documentation :(fa-regular fa-grin-squint-tears):),
 your content will conflict with basic or extended Markdown syntax, and it is inevitable.
 
 The escape character syntax can help you build the content you wanted:
