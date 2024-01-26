@@ -49,6 +49,12 @@ header {
   @include flex(10);
 }
 
+.header-logo{
+  width: 100;
+  height: 38;
+  @include flex(1);
+}
+
 .menu .menu-item {
   position: relative;
 }
