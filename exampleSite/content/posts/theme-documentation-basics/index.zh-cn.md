@@ -30,7 +30,7 @@ toc:
 
 由于 Hugo 提供的便利性, [Hugo](https://gohugo.io/) 本身是这个主题唯一的依赖.
 
-直接安装满足你操作系统 (**Windows**, **Linux**, **macOS**) 的最新版本 [:(fa-regular fa-file-archive fa-fw): Hugo (> 0.110.0)](https://gohugo.io/getting-started/installing/).
+直接安装满足你操作系统 (**Windows**, **Linux**, **macOS**) 的最新版本 [:(fa-solid fa-file-archive fa-fw): Hugo (> 0.110.0)](https://gohugo.io/getting-started/installing/).
 
 {{< admonition note "为什么不支持早期版本的 Hugo?" >}}
 因为 [Hugo Christmas Edition](https://gohugo.io/news/0.62.0-relnotes/) 版本引入了 [Markdown Render Hooks](https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks), 而且一些图片资源用到了 [0.84.0](https://github.com/gohugoio/hugo/releases/tag/v0.84.0) 版本引入的 webp 格式，并且我们将配置文件改成了 hugo.toml 而不是 config.toml. 所以这一个主题只支持大于 0.110.0 版本的 Hugo.
@@ -57,7 +57,7 @@ cd my_website
 
 **FeelIt** 主题的仓库是: [https://github.com/VipinMadhaan/FeelIt](https://github.com/VipinMadhaan/FeelIt).
 
-你可以下载主题的 [最新版本 :(fa-regular fa-file-archive fa-fw): .zip 文件](https://github.com/VipinMadhaan/FeelIt/releases) 并且解压放到 `themes` 目录.
+你可以下载主题的 [最新版本 :(fa-solid fa-file-archive fa-fw): .zip 文件](https://github.com/VipinMadhaan/FeelIt/releases) 并且解压放到 `themes` 目录.
 
 另外, 也可以直接把这个主题克隆到 `themes` 目录:
 
@@ -195,7 +195,7 @@ hugo
 
 除了 [Hugo 全局配置](https://gohugo.io/overview/configuration/) 和 [菜单配置](#basic-configuration) 之外, **FeelIt** 主题还允许您在网站配置中定义以下参数 (这是一个示例 `hugo.toml`, 其内容为默认值).
 
-请打开下面的代码块查看完整的示例配置 :(fa-regular fa-hand-point-down fa-fw)::
+请打开下面的代码块查看完整的示例配置 :(fa-solid fa-hand-point-down fa-fw)::
 
 ```toml
 [params]
@@ -928,21 +928,21 @@ $code-font-family: Fira Mono, Source Code Pro, Menlo, Consolas, Monaco, monospac
 
 | 语言 | Hugo 代码 | HTML `lang` 属性 | 主题文档 | Lunr.js 支持 |
 |:---- |:----:|:----:|:----:|:----:|
-| 德语 | `de` | `de` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 英语 | `en` | `en` | :(fa-regular fa-check-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 西班牙语 | `es` | `es` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 法语 | `fr` | `fr` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 印度尼西亚 | `id` | `id` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 意大利语 | `it` | `it` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 波兰语 | `pl` | `pl` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-square fa-fw): |
-| 巴西葡萄牙语 | `pt-br` | `pt-BR` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 罗马尼亚语 | `ro` | `ro` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 俄语 | `ru` | `ru` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 塞尔维亚语 | `sr` | `sr` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-square fa-fw): |
-| 越南语 | `vi` | `vi` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 简体中文 | `zh-cn` | `zh-CN` | :(fa-regular fa-check-square fa-fw): | :(fa-regular fa-check-square fa-fw): |
-| 波斯语 | `fa` | `fa` | :(fa-regular fa-square fa-fw): | :(fa-regular fa-square fa-fw): |
-| 乌克兰语 | `uk` | `uk` | :(fa-regular fa-square fa-fw):       | :(fa-regular fa-check-square fa-fw): |
+| 德语 | `de` | `de` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 英语 | `en` | `en` | :(fa-solid fa-check-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 西班牙语 | `es` | `es` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 法语 | `fr` | `fr` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 印度尼西亚 | `id` | `id` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 意大利语 | `it` | `it` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 波兰语 | `pl` | `pl` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-square fa-fw): |
+| 巴西葡萄牙语 | `pt-br` | `pt-BR` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 罗马尼亚语 | `ro` | `ro` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 俄语 | `ru` | `ru` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 塞尔维亚语 | `sr` | `sr` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-square fa-fw): |
+| 越南语 | `vi` | `vi` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 简体中文 | `zh-cn` | `zh-CN` | :(fa-solid fa-check-square fa-fw): | :(fa-solid fa-check-square fa-fw): |
+| 波斯语 | `fa` | `fa` | :(fa-solid fa-square fa-fw): | :(fa-solid fa-square fa-fw): |
+| 乌克兰语 | `uk` | `uk` | :(fa-solid fa-square fa-fw):       | :(fa-solid fa-check-square fa-fw): |
 
 ### 4.2 基本配置
 

@@ -53,7 +53,7 @@
                     {{- $categories := slice -}}
                     {{- range .Params.categories -}}
                         {{- $category := partialCached "function/path.html" . . | printf "/categories/%v" | $.Site.GetPage -}}
-                        {{- $categories = $categories | append (printf `<a href="%v"><i class="fa-regular fa-folder fa-fw"></i>%v</a>` $category.RelPermalink $category.Title) -}}
+                        {{- $categories = $categories | append (printf `<a href="%v"><i class="fa-solid fa-folder fa-fw"></i>%v</a>` $category.RelPermalink $category.Title) -}}
                     {{- end -}}
                     {{- with delimit $categories "&nbsp;" -}}
                         &nbsp;<span class="post-category">
@@ -63,17 +63,17 @@
                 </div>
                 <div class="post-meta-line">
                     {{- with .Site.Params.dateformat | default "2006-01-02" | .PublishDate.Format -}}
-                    <span><i class="fa-regular fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="{{ . }}">{{ . }}</time></span>&nbsp;
+                    <span><i class="fa-solid fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="{{ . }}">{{ . }}</time></span>&nbsp;
                     {{- end -}}
                     {{- with $params.license | string -}}
                     <span><i class="fa-solid fa-balance-scale fa-fw"></i>&nbsp;{{- . | safeHTML -}}</span>&nbsp;
                     {{- end -}}
                     <span><i class="fa-solid fa-pencil-alt fa-fw"></i>&nbsp;{{ T "wordCount" .WordCount }}</span>&nbsp;
-                    <span><i class="fa-regular fa-clock fa-fw"></i>&nbsp;{{ T "readingTime" .ReadingTime }}</span>&nbsp;
+                    <span><i class="fa-solid fa-clock fa-fw"></i>&nbsp;{{ T "readingTime" .ReadingTime }}</span>&nbsp;
                     {{- $comment := .Scratch.Get "comment" | default dict -}}
                     {{- if $comment.enable | and $comment.valine.enable | and $comment.valine.visitor -}}
                         <span id="{{ .RelPermalink }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
-                            <i class="fa-regular fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;{{ T "views" }}
+                            <i class="fa-solid fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;{{ T "views" }}
                         </span>&nbsp;
                     {{- end -}}
                 </div>

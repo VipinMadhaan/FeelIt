@@ -357,7 +357,7 @@ class Theme {
                 }, false);
                 $header.appendChild($ellipses);
                 const $copy = document.createElement('span');
-                $copy.insertAdjacentHTML('afterbegin', '<i class="fa-regular fa-copy fa-fw"></i>');
+                $copy.insertAdjacentHTML('afterbegin', '<i class="fa-solid fa-copy fa-fw"></i>');
                 $copy.classList.add('copy');
                 const code = $code.innerText;
                 if (this.config.code.maxShownLines < 0 || code.split('\n').length < this.config.code.maxShownLines + 2) $chroma.classList.add('open');
