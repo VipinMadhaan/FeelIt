@@ -26,7 +26,7 @@
 .subscribe__copy {
   max-width: 450px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 1.5;
 }
 
@@ -35,6 +35,7 @@
 }
 
 .form__email {
+  margin-top: 10px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #cad3db;
@@ -52,6 +53,7 @@
 }
 
 .form__button {
+  margin-top: 10px;
   background: $single-link-color;
   padding: 10px;
   border: none;

@@ -12,25 +12,25 @@ $global-max-width: 900px;
 
 // Color of the background
 $global-background-color: #ffffff !default;
-$global-background-color-dark: #020617 !default;
+$global-background-color-dark: #111 !default;
 $global-background-card-color: #fff !default;
-$global-background-card-color-dark: #000105 !default;
+$global-background-card-color-dark: #1a1a1a !default;
 
 // Color of the text
 $global-font-color: #161209 !default;
-$global-font-color-dark: #bbb !default;
+$global-font-color-dark: #ccc !default;
 
-// Color of the secondary text
+// Color of the secondary text 252627 292a2d
 $global-font-secondary-color: #505050 !default;
 $global-font-secondary-color-dark: #ccc !default;
 
 // Color of the link
 $global-link-color: #161209 !default;
-$global-link-color-dark: #0ea5e9 !default;
+$global-link-color-dark: #fff !default;
 
 // Color of the hover link 005ce6
 $global-link-hover-color: #005ce6 !default;
-$global-link-hover-color-dark: #fff !default;
+$global-link-hover-color-dark: #005ce6 !default;
 
 // Color of the border
 $global-border-color: #f0f0f0 !default;
@@ -63,7 +63,7 @@ $header-height: 3.5rem !default;
 
 // Color of the header background
 $header-background-color: #f8f8f8 !default;
-$header-background-color-dark: #000105 !default;
+$header-background-color-dark: #1a1a1a !default;
 
 // Font style of the header title
 $header-title-font-family: $global-font-family !default;
