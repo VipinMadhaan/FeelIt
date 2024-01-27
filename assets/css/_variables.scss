@@ -124,7 +124,7 @@ $pagination-link-hover-color-dark: #fff !default;
 // ========== Code ========== //
 // Color of the code
 $code-color: #272822 !default;
-$code-color-dark: #e2e4e5 !default;
+$code-color-dark: #0e8216 !default;
 
 // Color of the code background
 $code-background-color: #fafafa !default;
@@ -279,29 +279,29 @@ $code-highlight-color-map-dark: (
   /* KeywordPseudo */ 'kp': #ff6ac1,
   /* KeywordReserved */ 'kr': #ff6ac1,
   /* KeywordType */ 'kt': #9aedfe,
-  /* Name */ 'n': #e2e4e5,
+  /* Name */ 'n': #0e8216,
   /* NameAttribute */ 'na': #57c7ff,
   /* NameBuiltin */ 'nb': #ff5c57,
-  /* NameBuiltinPseudo */ 'bp': #e2e4e5,
+  /* NameBuiltinPseudo */ 'bp': #0e8216,
   /* NameClass */ 'nc': #f3f99d,
   /* NameConstant */ 'no': #ff9f43,
   /* NameDecorator */ 'nd': #ff9f43,
-  /* NameEntity */ 'ni': #e2e4e5,
-  /* NameException */ 'ne': #e2e4e5,
+  /* NameEntity */ 'ni': #0e8216,
+  /* NameException */ 'ne': #0e8216,
   /* NameFunction */ 'nf': #57c7ff,
-  /* NameFunctionMagic */ 'fm': #e2e4e5,
+  /* NameFunctionMagic */ 'fm': #0e8216,
   /* NameLabel */ 'nl': #ff5c57,
-  /* NameNamespace */ 'nn': #e2e4e5,
-  /* NameOther */ 'nx': #e2e4e5,
-  /* NameProperty */ 'py': #e2e4e5,
+  /* NameNamespace */ 'nn': #0e8216,
+  /* NameOther */ 'nx': #0e8216,
+  /* NameProperty */ 'py': #0e8216,
   /* NameTag */ 'nt': #ff6ac1,
   /* NameVariable */ 'nv': #ff5c57,
   /* NameVariableClass */ 'vc': #ff5c57,
   /* NameVariableGlobal */ 'vg': #ff5c57,
   /* NameVariableInstance */ 'vi': #ff5c57,
-  /* NameVariableMagic */ 'vm': #e2e4e5,
-  /* Literal */ 'l': #e2e4e5,
-  /* LiteralDate */ 'ld': #e2e4e5,
+  /* NameVariableMagic */ 'vm': #0e8216,
+  /* Literal */ 'l': #0e8216,
+  /* LiteralDate */ 'ld': #0e8216,
   /* LiteralString */ 's': #5af78e,
   /* LiteralStringAffix */ 'sa': #5af78e,
   /* LiteralStringBacktick */ 'sb': #5af78e,
