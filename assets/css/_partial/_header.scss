@@ -2,6 +2,7 @@ header {
   width: 100%;
   z-index: 150;
   background-color: $header-background-color;
+  @include box-shadow(0 0 1.5rem 0 rgba(0, 0, 0, .1));
   @include transition(box-shadow 0.3s ease);
 
   [theme=dark] & {
@@ -23,9 +24,9 @@ header {
     padding-left: .25rem;
   }
 
-  &:hover {
-    @include box-shadow(0 0 1.5rem 0 rgba(0, 0, 0, .1));
-  }
+  // &:hover {
+  //   @include box-shadow(0 0 1.5rem 0 rgba(0, 0, 0, .1));
+  // }
 }
 
 .header-wrapper {
