@@ -28,8 +28,7 @@
     {{- /* 004: WhatsApp */ -}}
     {{- if $share.Whatsapp -}}
         <a href="#" onclick="return false;" title="{{ T `shareOn` }} WhatsApp" data-sharer="whatsapp" data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-web>
-            <!-- {{- dict "Class" "fa-brands fa-whatsapp fa-fw" | partial "plugin/icon.html" -}} -->
-            {{- dict "Simpleicons" "whatsapp" "Prefix" (.Scratch.Get "cdn" | default dict).simpleIconsPrefix | partial "plugin/icon.html" -}}
+            {{- dict "Class" "fa-brands fa-whatsapp fa-fw" | partial "plugin/icon.html" -}}
         </a>
     {{- end -}}
 
@@ -64,8 +63,7 @@
     {{- /* 009: Reddit */ -}}
     {{- if $share.Reddit -}}
         <a href="#" onclick="return false;" title="{{ T `shareOn` }} Reddit" data-sharer="reddit" data-url="{{ .Permalink }}">
-            <!-- {{- dict "Class" "fa-brands fa-reddit fa-fw" | partial "plugin/icon.html" -}}  -->
-            {{- dict "Simpleicons" "reddit" "Prefix" (.Scratch.Get "cdn" | default dict).simpleIconsPrefix | partial "plugin/icon.html" -}}
+            {{- dict "Class" "fa-brands fa-reddit fa-fw" | partial "plugin/icon.html" -}}
         </a>
     {{- end -}}
 

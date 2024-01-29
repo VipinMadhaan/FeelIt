@@ -336,7 +336,7 @@ Please open the code block below to view the complete sample configuration :(fa-
     description = "[FeelIt](https://github.com/VipinMadhaan/FeelIt) is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/) developed by [Vipin Madhaan](https://VipinMadhaan.dev). It is based on the original [LoveIt Theme](https://github.com/dillonzq/LoveIt), [LeaveIt Theme](https://github.com/liuzc/LeaveIt), and [KeepIt Theme](https://github.com/Fastbyte01/KeepIt)."
     # description of your status
     [[params.about.status]]
-      faIcon = "fa-solid fa-building"
+      faIcon = "fa-regular fa-building"
       title = "Compagnie"
       desc = "FeelIt"
     [[params.about.status]]

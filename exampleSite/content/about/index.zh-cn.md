@@ -45,7 +45,7 @@ math:
 #### 社交和评论系统
 
 * :(fa-regular fa-user fa-fw): 支持 **[Gravatar](https://gravatar.com)** 头像
-* :(fa-solid fa-user-circle fa-fw): 支持本地**头像**
+* :(fa-regular fa-user-circle fa-fw): 支持本地**头像**
 * :(fa-regular fa-id-card fa-fw): 支持多达 **64** 种社交链接
 * :(fa-solid fa-share-square fa-fw): 支持多达 **28** 种网站分享
 * :(fa-regular fa-comment fa-fw): 支持 **[Disqus](https://disqus.com)** 评论系统

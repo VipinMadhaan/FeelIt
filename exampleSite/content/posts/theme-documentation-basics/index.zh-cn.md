@@ -335,7 +335,7 @@ hugo
     description = "[FeelIt](https://github.com/VipinMadhaan/FeelIt) 是一个由 [Vipin Madhaan](https://VipinMadhaan.dev) 开发的**简洁**、**优雅**且**高效**的 [Hugo](https://gohugo.io/) 博客主题。 它的原型基于 [LoveIt 主题](https://github.com/dillonzq/LoveIt), [LeaveIt 主题](https://github.com/liuzc/LeaveIt), 和 [KeepIt 主题](https://github.com/Fastbyte01/KeepIt)。"
     # 你的状态描述
     [[params.about.status]]
-      faIcon = "fa-solid fa-building"
+      faIcon = "fa-regular fa-building"
       title = "公司"
       desc = "FeelIt"
     [[params.about.status]]

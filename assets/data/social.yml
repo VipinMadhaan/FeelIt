@@ -507,7 +507,7 @@ resume:
   Prefix: https://goo.gl/
   Title: Download Resume
   Icon:
-    Class: fa-solid fa-user-circle fa-fw
+    Class: fa-regular fa-user-circle fa-fw
 
 # 065: XDA-Developers
 xda:
