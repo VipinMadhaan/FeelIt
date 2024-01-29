@@ -335,7 +335,7 @@ Please open the code block below to view the complete sample configuration :(fa-
       title = "Company"
       desc = "FeelIt"
     [[params.about.status]]
-      faIcon = "fa-solid fa-briefcase fa-fw"
+      faIcon = "fa-regular fa-id-card fa-fw"
       title = "Occupation"
       desc = "Freelancer"
     [[params.about.status]]

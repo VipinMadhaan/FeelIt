@@ -200,7 +200,7 @@
         </a>
     {{- end -}}
 
-{{- /* 029: Email */ -}}
+    {{- /* 029: Email */ -}}
     {{- if $share.Email -}}
         <a href="mailto:?Body={{ .Permalink }}&amp;Subject={{ .Title }}" target="_blank" title="Email this" data-sharer="email" data-url="{{ .Permalink }}" data-title="{{ .Title }}" data-description="{{ .Description }}">
             <!-- {{- dict "Class" "fa-brands fa-envelope fa-fw" | partial "plugin/icon.html" -}} -->

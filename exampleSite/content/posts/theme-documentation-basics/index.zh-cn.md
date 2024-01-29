@@ -339,7 +339,7 @@ hugo
       title = "公司"
       desc = "FeelIt"
     [[params.about.status]]
-      faIcon = "fa-solid fa-briefcase fa-fw"
+      faIcon = "fa-regular fa-id-card fa-fw"
       title = "职业"
       desc = "自由职业者"
     [[params.about.status]]
